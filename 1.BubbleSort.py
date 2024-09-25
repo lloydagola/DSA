@@ -3,8 +3,8 @@
 bubble sort implementation using a for loop
 
 Big-O
-    Time Complexity  :
-    Space Complexity :
+    Time Complexity  : constant O(1)
+    Space Complexity : quadratic O(n^2)
 '''
 
 unsorted_listay = [64,34,25,12,22,11,90,5]
