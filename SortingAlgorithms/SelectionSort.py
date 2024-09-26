@@ -3,7 +3,7 @@
 Selection sort implementation using nested for loop
 Big-P
     Time Complexity  : quadratic O(n^2)
-    Space Complexity : constant 0(1)
+    Space Complexity : constant O(1)
 '''
 
 unsorted_list = [64,34,25,12,22,11,90,5]
