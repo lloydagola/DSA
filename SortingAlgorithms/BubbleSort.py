@@ -7,7 +7,7 @@ Big-O
     Space Complexity : quadratic O(n^2)
 '''
 
-unsorted_listay = [64,34,25,12,22,11,90,5]
+unsorted_list = [64,34,25,12,22,11,90,5]
 
 n = len(unsorted_listay)
 for i in range(n-1):
