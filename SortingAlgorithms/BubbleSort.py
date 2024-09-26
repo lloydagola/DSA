@@ -9,14 +9,14 @@ Big-O
 
 unsorted_list = [64,34,25,12,22,11,90,5]
 
-n = len(unsorted_listay)
+n = len(unsorted_list)
 for i in range(n-1):
     swapped = False
     for j in range(n-i-1):
-        if unsorted_listay[j] > unsorted_listay[j+1]:
-            unsorted_listay[j], unsorted_listay[j+1] = unsorted_listay[j+1], unsorted_listay[j]
+        if unsorted_list[j] > unsorted_list[j+1]:
+            unsorted_list[j], unsorted_list[j+1] = unsorted_list[j+1], unsorted_list[j]
             swapped = True
     if not swapped:
         break
 
-print("Sorted array:", unsorted_listay)
+print("Sorted array:", unsorted_list)
