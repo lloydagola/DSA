@@ -17,7 +17,7 @@ def partition(ls, low, high):
     return i+1
 
 def quicksort(ls, low=0, high=None):
-    if high == None:
+    if high is None:
         high = len(ls)-1
 
     if low < high:
