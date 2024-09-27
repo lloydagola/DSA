@@ -11,7 +11,7 @@ def partition(ls, low, high):
     for j in range(low, high):
         if ls[j] <= pivot:
             i += 1
-            ls[j], ls[high] = ls[high], ls[j]
+            ls[j], ls[i] = ls[i], ls[j]
 
     ls[i+1], ls[high] = ls[high], ls[i+1]
     return i+1
