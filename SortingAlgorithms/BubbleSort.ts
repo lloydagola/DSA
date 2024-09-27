@@ -1,7 +1,7 @@
 /**
  * bubble sort in typescript
- * space complexity : constant O(1)
- * time complexity  : quadratic O(n^2)
+ * Time Complexity  : Quadratic O(n^2)
+ * Space Complexity : Constant O(1)
  */
 
 const unsortedArray: number[] = [64, 34, 25, 12, 22, 11, 90, 5];
