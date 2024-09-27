@@ -9,7 +9,7 @@ def partition(ls, low, high):
     i = low - 1
 
     for j in range(low, high):
-        if ls[low] < pivot:
+        if ls[j] <= pivot:
             i += 1
             ls[j], ls[high] = ls[high], ls[j]
 
