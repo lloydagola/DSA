@@ -1,3 +1,9 @@
+'''
+Quicksort implementation
+Time Complexity: Linear Logarithmic O(n log n)
+Space Complexity: Logarithmic O(Log n)
+'''
+
 def partition(ls, low, high):
     pivot = ls[high]
     i = low - 1
