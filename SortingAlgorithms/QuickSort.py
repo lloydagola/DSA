@@ -5,11 +5,10 @@ Space Complexity: Logarithmic O(Log n)
 '''
 
 def partition(ls, low, high):
-    pivot = ls[high]
     i = low - 1
 
     for j in range(low, high):
-        if ls[j] <= pivot:
+        if ls[j] <= ls[high]:
             i += 1
             ls[j], ls[i] = ls[i], ls[j]
 
