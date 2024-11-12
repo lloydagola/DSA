@@ -7,12 +7,38 @@ class TreeNode :
 
 def pre_order_traversal(node):
     if node is None:
-        return
+        return    
     
     print(node.data)
-    
     pre_order_traversal(node.left)
     pre_order_traversal(node.right)
+
+
+def in_order_traversal(node):
+    if node is None:
+        return
+    
+    in_order_traversal(node.left)
+    print(node.data)
+    in_order_traversal(node.right)
+
+def post_order_traversal(node):
+    if node is None:
+        return
+    
+    post_order_traversal(node.left)
+    post_order_traversal(node.right)
+    print(node.data)
+
+def binary_serch(node, target):
+    if node is None:
+        return None
+    elif node.data == target:
+        return node
+    elif target < node.data:
+        return binary_serch(node.left, target)
+    else:
+        return binary_serch(node.right, target)
 
 
 #set up nodes
