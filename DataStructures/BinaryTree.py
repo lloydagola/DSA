@@ -5,7 +5,7 @@ class TreeNode :
         self.right = None
         
 
-def traverseNodes(node):
+def traverse_nodes(node):
     if node is None:
         return
     
@@ -19,7 +19,7 @@ def traverseNodes(node):
 R_TreeNode = TreeNode("R")
 A_TreeNode = TreeNode("A")
 B_TreeNode = TreeNode("B")
-c_TreeNode = TreeNode("c")
+C_TreeNode = TreeNode("c")
 D_TreeNode = TreeNode("D")
 E_TreeNode = TreeNode("E")
 F_TreeNode = TreeNode("F")
@@ -37,6 +37,6 @@ B_TreeNode.right = F_TreeNode
 
 F_TreeNode.left = G_TreeNode
 
-traverseNodes(R_TreeNode)
+traverse_nodes(R_TreeNode)
 
 
