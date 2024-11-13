@@ -40,6 +40,13 @@ def binary_serch(node, target):
     else:
         return binary_serch(node.right, target)
 
+def insert(node, data):
+    if node is None:
+        insert(node)
+    elif data > node.data:
+        node.right = insert(node.right, data)
+    elif data < node.data:
+        node.left = insert(node.left, data)
 
 #set up nodes
 R_TreeNode = TreeNode("R")
