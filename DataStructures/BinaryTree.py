@@ -42,11 +42,12 @@ def binary_serch(node, target):
 
 def insert(node, data):
     if node is None:
-        insert(node)
+        return TreeNode(data)
     elif data > node.data:
         node.right = insert(node.right, data)
     elif data < node.data:
         node.left = insert(node.left, data)
+    return node
 
 #set up nodes
 R_TreeNode = TreeNode("R")
@@ -72,6 +73,7 @@ B_TreeNode.right = F_TreeNode
 
 F_TreeNode.left = G_TreeNode
 
-pre_order_traversal(R_TreeNode)
+insert(R_TreeNode, "H")
+in_order_traversal(R_TreeNode)
 
 
